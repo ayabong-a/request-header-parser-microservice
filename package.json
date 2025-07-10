@@ -1,0 +1,25 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayabong-a/request-header-parser-microservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayabong-a/request-header-parser-microservice/issues"
+  },
+  "homepage": "https://github.com/ayabong-a/request-header-parser-microservice#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0"
+  }
+}
