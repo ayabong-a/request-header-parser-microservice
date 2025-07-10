@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Request Header Parser</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
     <h1>Header Parser Microservice</h1>
     <p>This microservice parses the request headers and returns them in JSON format.</p>
+
+    <form action="/api/whoami" method="get">
+        <button type="submit">Get My Header Info</button>
+    </form>
+    <div id="result">
+        <h2>Your Header Information:</h2>
+        <pre id="header-info"></pre>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            fetch('/api/whoami')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('header-info').textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error fetching header info:', error);
+                });
+        });
+    </script>
+    <footer>
+        <p>Created by <a href="" target="_blank" rel="noopener noreferrer">Ayabonga</a> for the FreeCodeCamp Header
+            Parser Microservice project.</p>
+    </footer>
+    </div>
+
 </body>
+
 </html>
