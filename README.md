@@ -4,7 +4,7 @@
 
 This is a simple Node.js microservice that parses the incoming HTTP request headers and returns useful information about the client in JSON format.
 
-> Built as part of the [FreeCodeCamp Backend APIs Certification](https://www.freecodecamp.org/learn/back-end-development-and-apis/) project: **Request Header Parser Microservice**
+> Built as part of the [FreeCodeCamp Backend Development and APIs Certification](https://www.freecodecamp.org/learn/back-end-development-and-apis/) project: **Request Header Parser Microservice**
 
 ---
 
